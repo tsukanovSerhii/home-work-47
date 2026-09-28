@@ -16,9 +16,8 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
         </label>
         <input
           ref={ref}
-          className={`w-full bg-black/20 border ${
-            error ? 'border-red-500/50 focus:border-red-500' : 'border-white/10 focus:border-indigo-500'
-          } rounded-xl px-4 py-3 text-white placeholder-slate-500 outline-none transition-colors`}
+          className={`w-full bg-black/20 border ${error ? 'border-red-500/50 focus:border-red-500' : 'border-white/10 focus:border-indigo-500'
+            } rounded-xl px-4 py-3 text-white placeholder-slate-500 outline-none transition-colors`}
           aria-invalid={error ? 'true' : 'false'}
           {...props}
         />
